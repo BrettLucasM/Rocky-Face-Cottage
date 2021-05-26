@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Housing Information</title><!--Title of each individual page -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="index.css" /><!--relies on the same .css for every page-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--Different plugins for accordion widget and resizable plugin-->
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+<main>
+    <ul>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/index.html">Home</a></li><!--Lists the menu for the every page aswell as being a clickable link. The class "menu" makes the list item light up blue to signify its selection-->
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Gallery.html">Gallery</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Location.html">Location</a></li>
+        <li><a class="menu" href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/HousingLocation.html">Housing Information</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/about.html">About</a></li>
+        <li class="menuTitle"><em>Rocky Face Cottage</em></li>
+    </ul>
+
+    <img class="indexImage" src="Cottge.jpeg" alt="Rocky Face Cottage"><br><!--Main image for each page which remains at the top of its page-->
+
+    <h1>Location Information</h1><br><br>
+
+    <hr>
+
+    <div id="accordion" class="accordion"><!--accordion widget begins-->
+        <h3>Description</h3><!--First accordion section title-->
+        <div class="describe"><!--class created to edit the <p> element of this section-->
+            <p>The Rocky Face Cottage is located in the North Carolina mountains at the city of Taylorsville. This cottage is
+            found looking over a mountain side facing the adjacent forested area. Enclosed between cattle and horse pastures this quiet stretch
+            of land is where peace and calamity are created. Not too far from the cottage are excursions, downtown Taylorsville, community churches,
+            pastures, and plenty of hiking trails. With Charlotte being an hour away you can still have a exciting vacation and a serene home
+                away from home.</p> <!--This is the description part of the first section in the accordion-->
+        </div>
+
+        <h3>Reviews</h3> <!--Section 2-->
+        <div class="accordionSections">
+        <div class="review" id="review"></div><!--This div is used to hold all of the information being retrieved from the .json file I created-->
+        <div class="review" id="xmlreview"></div><!--This div is used to hold all of the information being retrieved from the .xml file I created-->
+        </div>
+        <h3>Create a Review</h3><!--Section 3-->
+        <div class="accordionSections">
+            <form class="accordionForm" action="#"> <!--accordionForm created to manipulate the form without impeeding on other classes named form-->
+
+                <p>Summarize your stay:</p>
+
+                <label for="Summation"></label>
+                <textarea id="Summation" name="Summation" rows="3" cols="40" placeholder="Explain in a few words..." maxlength="300"></textarea>
+                <p>Dates you stayed at the cottage:</p><br>
+                <label for="datepicker1">Beginning of stay:</label><!--label's for different input forms-->
+                <input type="text" id="datepicker1"><br><br><!--Input for specified label above-->
+                <label for="datepicker">End of stay:</label>
+                <input type="text" id="datepicker"><br><br>
+                <p>How was your experience?</p><br>
+                <input type="radio" id="Good" name="Experience" value="male">
+                <label for="Good">Had a Great Time</label><br>
+                <input type="radio" id="meh" name="Experience" value="female">
+                <label for="meh">Could Have Been Better.</label><br>
+                <input type="radio" id="Ugly" name="Experience" value="other">
+                <label for="Ugly">Had a Terrible Time.</label><br><br>
+                <br>
+                <input type="submit" class="buttons">
+            </form>
+        </div>
+
+    </div>
+<br><br>
+    <table class="housingTble" id="housingTable">
+        <caption class="CVcaption">Amenities List and Housing Blueprint</caption><!--Caption created for the housingTable -->
+
+        <tr>
+            <th> </th>
+            <td>
+                <div id="listFP1" class="listFP"> <!--Because I already created a css for the li selector I was having a hard time getting my list
+                to look different than what the css was intended for. I tried pseudoclasses and other options, but it wasnt working. So, I put this
+                here temperarley-->
+                <p>Two bedroom </p>
+                <p>Master Bedroom</p>
+                <p>Half bathroom</p>
+                <p>Kitchen</p>
+                <p>Living Room</p>
+                <p>Front and back porch</p>
+                <p>Supply Shed</p>
+                <p>.7 acres of land</p>
+                </div>
+            </td>
+
+            <th></th>
+            <td>
+                <img id="resizable" class="ui-widget-content" src="Floor_Plan.sdt.png" alt="Floor Plan"> <!--New floor plan image to show at the bottom of the page. I will
+                make a better floor plan image tomorrow. This one is a temporary stand in.--><!--Used Resizable plugin to edit the image so users can
+                see it more clearly by expanding and resizing it-->
+            </td>
+        </tr>
+    </table>
+
+</main>
+
+<footer class="footer"> <!--footer class for contact information-->
+    <h3>Contact</h3>
+    <table>
+        <tr>
+            <td>(704) 929-6700</td>
+            <td>tricia.lucas@yahoo.com</td>
+            <td><a href="https://www.google.com/maps/place/396+Rocky+Face+Church+Rd,+Taylorsville,+NC+28681/@35.9498574,-81.1547463,17z/data=!3m1!4b1!4m5!3m4!1s0x88516aba81a2859f:0x9fb7212189fd84f8!8m2!3d35.9498531!4d-81.1525576">Google Maps</a></td>
+
+        </tr>
+    </table>
+
+    <br><hr>
+    <small>The terms amd services listed are bound and held as applying to the user upon visitation of this website.
+        All cookies (session, persistent, or third-party) are valid uses and any issues amounted by them are not the responsibility
+        of the site - Rocky Mountain Cottage. Please feel free to visit our
+        <a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/TermsandServices.html">Terms and Services</a>
+        site for a full list of usages. </small>
+    <small>&#169;2020 All rights Reserved</small>
+</footer>
+
+
+</body>
+</html>

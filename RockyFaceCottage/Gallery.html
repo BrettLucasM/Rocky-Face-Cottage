@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title><!--Title of each individual page-->
+    <link rel="stylesheet" href="index.css" /><!--relies on the same .css for every page-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+
+    <script src="Gallery.js"></script>
+
+</head>
+
+<body>
+
+<main>
+    <ul>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/index.html">Home</a></li><!--Lists the menu for the every page aswell as being a clickable link. The class "menu" makes the list item light up blue to signify its selection-->
+        <li><a class="menu" href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Gallery.html">Gallery</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Location.html">Location</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/HousingLocation.html">Housing Information</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/about.html">About</a></li>
+        <li class="menuTitle"><em>Rocky Face Cottage</em></li>
+    </ul>
+
+    <img class="indexImage" src="GalleryCover2.jpg" alt="Rocky Face Mountain"><br>
+
+    <h1>Gallery</h1>
+    <hr>
+
+    <div id="viewbutton">
+        <button onclick="bxSliderToGrid()" class="buttons">Grid View</button>
+    </div>
+
+    <div id="gridView">
+
+    </div>
+
+<div class="gbody" id="sliderContainer"> <!--Class gbody helps to control the body of the div without altering the shared body class of all the pages-->
+
+    <ul id="slider"> <!--calls the bxSlider so that the images below will be created as a carousel.-->
+        <li class="sliderul"><img class="sliderul" src="GalleryImg1.jpg" alt="Living Room" title="Living Room"></li><!--Each image in the caousel bxSlider-->
+        <li class="sliderul"><img class="sliderul"  src="GalleryImg2.jpg" alt="Backyard" title="Backyard"></li>
+        <li class="sliderul"><img class="sliderul" src="GalleryImg3.jpg" alt="Bedroom" title="Bedroom"></li>
+        <li class="sliderul"><img class="sliderul" src="Cottge.jpeg" alt="Cottage" title="Cottage"></li>
+        <li class="sliderul"><img class="sliderul" src="GalleryImg4.jpg" alt="Restroom" title="Restroom"></li>
+        <li class="sliderul"><img class="sliderul" src="Shed.jpg" alt="Shed" title="Shed"></li>
+        <li class="sliderul"><img class="sliderul"  src="Kitchen.jpg" alt="Kitchen" title="Kitchen"></li>
+        <li class="sliderul"><img class="sliderul" src="guestRoom.jpg" alt="Guest Room" title="Guest Room"></li>
+        <li class="sliderul"><img class="sliderul" src="frontYard.jpg" alt="Front Yard" title="Front Yard"></li>
+    </ul>
+    <p id="id_pager"></p> <!--Pager that shows what page you are on and how many are there. This area is left blank so the bxSlider can place the information here-->
+</div>
+
+
+</main>
+
+<footer class="footer"> <!--footer class for contact information-->
+    <h3>Contact</h3>
+    <table>
+        <tr>
+            <td>(704) 929-6700</td>
+            <td>tricia.lucas@yahoo.com</td>
+            <td><a href="https://www.google.com/maps/place/396+Rocky+Face+Church+Rd,+Taylorsville,+NC+28681/@35.9498574,-81.1547463,17z/data=!3m1!4b1!4m5!3m4!1s0x88516aba81a2859f:0x9fb7212189fd84f8!8m2!3d35.9498531!4d-81.1525576">Google Maps</a></td>
+
+        </tr>
+    </table>
+
+    <br><hr>
+    <small>The terms amd services listed are bound and held as applying to the user upon visitation of this website.
+        All cookies (session, persistent, or third-party) are valid uses and any issues amounted by them are not the responsibility
+        of the site - Rocky Mountain Cottage. Please feel free to visit our
+        <a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/TermsandServices.html">Terms and Services</a>
+        site for a full list of usages. </small>
+    <small>&#169;2020 All rights Reserved</small>
+</footer>
+
+
+</body>
+</html>

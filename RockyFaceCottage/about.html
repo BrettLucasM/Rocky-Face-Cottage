@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title><!--Title of each individual page-->
+    <link rel="stylesheet" href="index.css" /> <!--relies on the same .css for every page-->
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+<main>
+    <ul>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/index.html">Home</a></li><!--Lists the menu for the every page aswell as being a clickable link. The class "menu" makes the list item light up blue to signify its selection-->
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Gallery.html">Gallery</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/Location.html">Location</a></li>
+        <li><a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/HousingLocation.html">Housing Information</a></li>
+        <li><a class="menu" href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/about.html">About</a></li>
+        <li class="menuTitle"><em>Rocky Face Cottage</em></li>
+    </ul>
+
+    <img class="aboutSun" src="aboutSunset2.png" alt="Rocky Face Sunset"> <!--Main image for each page which remains at the top of its page-->
+
+    <h1>About The Owners</h1>
+     <hr>
+    <p>My father bought this property ten years ago and in that time it has been rented to numerous clients and their families
+    Before we bought the property it was a small trailer deep in the Taylorsville country side. We later took the time to renovate and have not looked back.
+        Today we continue to upgrade the cottage in order to bring the comfort of modern nature to the Carolina country side. If you have
+        any questions on please feel free to contact us at (704) 929-6700.</p><!--Prints a statement about the owners and the cottage-->
+     <hr>
+    <p><strong>Please join our Email list to be notified of upcoming availabilities.</strong></p>
+    <form name="emailList" id="emailList" action="#"><!--creates a form for an email list, but does not send it to a database at this time-->
+        <label for="firstN">First Name:<span class="redRequired">*</span></label><!--Creates a label for the firstN input-->
+        <input type="text" name="firstN" id="firstN" placeholder="Jane" aria-required="true" required><br><br><!--Creates a form input for text input for the label firsN-->
+
+        <label for="middle">Middle Initial:</label>
+        <input type="text" name="middle" id="middle" placeholder="M" maxlength="1"><br><br>
+
+        <label for="lastN">Last Name:<span class="redRequired">*</span></label>
+        <input type="text" name="lastN" id="lastN" placeholder="Doe" aria-required="true" required><br><br>
+
+        <label for="email">Email:<span class="redRequired">*</span></label>
+        <input type="email" name="email" id="email"  placeholder="JaneDoe@yahoo.com" aria-required="true" required><br><br>
+
+        <input type="submit" onclick="submitVerify()" value="Submit"><br>
+        <em><small><span class="redRequired">*</span> Signifies Required Fields</small></em>
+    </form>
+
+
+</main>
+
+<footer class="footer"> <!--footer class for contact information-->
+    <h3>Contact</h3>
+    <table>
+        <tr>
+            <td>(704) 929-6700</td>
+            <td>tricia.lucas@yahoo.com</td>
+            <td><a href="https://www.google.com/maps/place/396+Rocky+Face+Church+Rd,+Taylorsville,+NC+28681/@35.9498574,-81.1547463,17z/data=!3m1!4b1!4m5!3m4!1s0x88516aba81a2859f:0x9fb7212189fd84f8!8m2!3d35.9498531!4d-81.1525576">Google Maps</a></td>
+
+        </tr>
+    </table>
+
+    <br><hr>
+    <small>The terms amd services listed are bound and held as applying to the user upon visitation of this website.
+        All cookies (session, persistent, or third-party) are valid uses and any issues amounted by them are not the responsibility
+        of the site - Rocky Mountain Cottage. Please feel free to visit our
+        <a href="https://webpages.uncc.edu/blucas17/Exersize/RockyFaceCottage/TermsandServices.html">Terms and Services</a>
+        site for a full list of usages. </small>
+    <small>&#169;2020 All rights Reserved</small>
+</footer>
+
+
+</body>
+</html>

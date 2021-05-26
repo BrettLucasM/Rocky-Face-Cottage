@@ -1,0 +1,374 @@
+p{
+   font-size: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.menu) {
+    background-color: #787878;
+}
+
+.menu {
+    background-color: darkorange;
+    color: black;
+}
+
+.indexImage {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.aboutSun{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.blockquote-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.blockquote {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+}
+
+.blockquote h2 {
+    font-family: "Times New Roman", Times, serif;
+    position: relative; /* for pseudos */
+    color: black;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid black;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 10px;
+}
+
+.blockquote h2:after {
+    content:"";
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+
+.blockquote h2:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid black;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+}
+
+.blockquote h4 {
+    position: relative;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+
+.blockquote h4:first-letter {
+    margin-left:-12px;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer table {
+    width: auto;
+    margin: auto;
+    color: white;
+    text-align: center;
+    border-spacing: 2cm 0em;
+}
+
+.footer th {
+    height: 25px;
+    color: white;
+
+}
+
+body {
+    background-color: darkorange;
+    margin: 0;
+}
+hr{
+    border-color: white;
+    text-align: center;
+    width: 85%;
+}
+
+.rockyTble {
+    height: 100px;
+    width: 75%;
+    object-fit: contain;
+    text-align: center;
+}
+.listAmen {
+    background-color: darkorange;
+    text-align: center;
+}
+
+form{
+    background-color: darkorange;
+    text-align: center;
+    padding: 1em 2em;
+    border: 3px solid black;
+    max-width: 200px;
+    margin: auto;
+}
+
+.floorPlan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 1em 2em;
+}
+
+.listFP{
+    max-width: 200px;
+    margin: auto;
+    padding: 1em 2em;
+    border: 3px solid black;
+}
+
+.centerTable{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    padding: 0;
+}
+
+.accordionForm{
+    text-align: left;
+    padding: 1em 2em;
+    border: 3px solid black;
+    max-width: 500px;
+    height: 650px;
+    margin: auto;
+    background-color: whitesmoke;
+}
+.accordionForm p{
+    text-align: left;
+}
+
+.ui-accordion-header {
+    background-color: black;
+    color: white;
+}
+
+.ui-accordion-header.ui-state-active {
+    background-color: darkorange;
+}
+.describe{
+    background-color: whitesmoke;
+}
+.describe p{
+    text-align: left;
+    font-size: medium;
+
+}
+.review p{
+    font-size: medium;
+}
+#resizable {
+    width: 500px; height: 400px; padding: 0.5em;
+}
+
+.bx-wrapper {
+    margin-bottom: 20px;
+}
+#id_pager {
+    text-align: center;
+    font-size: 90%;
+    color: black;
+}
+.gbody {
+    width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pics {
+    height:  332px;
+    width:   432px;
+    padding: 0;
+    margin:  0;
+    top: 0;
+}
+
+.pics img {
+    padding: 15px;
+    border:  1px solid #ccc;
+    background-color: #eee;
+    width:  400px;
+    height: 300px;
+    left: auto;
+}
+
+.bx-controls-direction a {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.bx-wrapper:hover .bx-controls-direction a {
+    opacity: 1;
+}
+.indextbl1{
+    background-color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexSection1{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wH1{
+    text-align: left;
+    color: white;
+}
+.Bh1{
+    text-align: right;
+    color: black;
+}
+.indextbl1tr{
+    height: 350px;
+}
+.housingTble{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordion{
+    width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.fourofour{
+    color: black;
+    text-align: center;
+}
+.TSbody{
+    background-color: red;
+}
+
+.sliderul{
+    height: 450px;
+    width: 640px;
+    object-fit: cover;
+}
+
+.gridViewjs{
+    height: 350px;
+    width: 400px;
+    border: 6px solid black;
+}
+.buttons{
+    padding: 12px 28px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.gridviewtble{
+    width: 100%;
+
+}
+.accordionSections{
+    background-color: whitesmoke;
+}
+.redRequired{
+    color: red;
+}
+.CVcaption{
+    text-align: center;
+    font-size: 20px;
+}
+.menuTitle{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 30px 16px;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
